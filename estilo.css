@@ -1,0 +1,128 @@
+/* Retira algumas margens automáticas do navegador */
+body {
+    margin: 0;
+
+    /* Define a fonte utilizada na página */
+    font-family: Arial, sans-serif;
+
+    /* Cor de fundo */
+    background-color: #f4f4f4;
+
+    /* Cor padrão das letras */
+    color: #222;
+}
+
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #1d4ed8;
+    color: white;
+
+    /* Espaçamento interno */
+    padding: 30px;
+
+    /* Centraliza os textos */
+    text-align: center;
+}
+
+
+/* Área principal da página */
+main {
+    padding: 30px;
+}
+
+
+/* Container que guarda os três cartões */
+.destaques {
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /* Cria espaço entre os cartões */
+    gap: 20px;
+
+    /* Permite que os cartões quebrem para outra linha */
+    flex-wrap: wrap;
+
+    /* Centraliza os cartões */
+    justify-content: center;
+}
+
+
+/* Cada cartão */
+.card {
+    background-color: white;
+
+    /* Define a largura */
+    width: 280px;
+
+    /* Espaçamento interno */
+    padding: 20px;
+
+    /* Arredonda as bordas */
+    border-radius: 10px;
+
+    /* Coloca uma pequena sombra */
+    box-shadow: 0 2px 8px #999;
+
+    /* Centraliza o conteúdo */
+    text-align: center;
+}
+
+
+/* Título de cada cartão */
+.card h2 {
+    color: #1d4ed8;
+}
+
+
+/* Botões */
+button {
+    background-color: #1d4ed8;
+    color: white;
+
+    /* Retira a borda padrão */
+    border: none;
+
+    /* Espaçamento interno */
+    padding: 10px 20px;
+
+    /* Arredonda o botão */
+    border-radius: 5px;
+
+    /* Muda o cursor do mouse */
+    cursor: pointer;
+}
+
+
+/* Quando o mouse passa sobre o botão */
+button:hover {
+    background-color: #163ea7;
+}
+
+
+/* As respostas começam escondidas */
+.resposta {
+    display: none;
+
+    /* Espaço acima da resposta */
+    margin-top: 15px;
+
+    /* Fundo levemente diferente */
+    background-color: #e8f0ff;
+
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+}
