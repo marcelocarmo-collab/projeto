@@ -1,159 +1,1455 @@
 <!DOCTYPE html>
 
-<!-- Início do documento HTML -->
+<!--
+    Início do documento HTML.
+    lang="pt-BR" informa que o conteúdo está em português do Brasil.
+-->
 <html lang="pt-BR">
 
 <head>
 
-    <!-- Permite utilizar acentos e caracteres da língua portuguesa -->
+    <!-- Permite usar corretamente acentos e caracteres especiais -->
     <meta charset="UTF-8">
 
-    <!-- Faz o site se adaptar ao tamanho da tela -->
+    <!-- Faz a página se adaptar melhor ao celular -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Título que aparece na aba do navegador -->
     <title>Matemática e Música</title>
 
-    <!-- Conecta o HTML ao arquivo de CSS -->
+    <!-- Liga o arquivo HTML ao arquivo CSS -->
     <link rel="stylesheet" href="estilo.css">
 
 </head>
 
 <body>
 
-    <!-- Cabeçalho principal da página -->
+    <!-- ===================================================== -->
+    <!-- CABEÇALHO -->
+    <!-- ===================================================== -->
+
     <header>
 
-        <!-- Título principal -->
-        <h1>Matemática e Música</h1>
+        <h1>🎵 Matemática e Música</h1>
 
-        <!-- Pequena explicação sobre a página -->
         <p>
-            Descubra alguns mitos e verdades sobre a relação
-            entre Matemática, Música e aprendizagem.
+            Descubra como números, frequências, ritmos, instrumentos,
+            tecnologia e criatividade estão conectados.
         </p>
 
     </header>
 
 
-    <!-- Conteúdo principal da página -->
+    <!-- ===================================================== -->
+    <!-- MENU DE NAVEGAÇÃO -->
+    <!-- ===================================================== -->
+
+    <nav>
+
+        <a href="#destaques">Destaques</a>
+
+        <a href="#fundamentos">Teoria Musical</a>
+
+        <a href="#matematica">Matemática</a>
+
+        <a href="#baixo">Contrabaixo</a>
+
+        <a href="#exercicios">Exercícios</a>
+
+        <a href="#artistas">Artistas</a>
+
+        <a href="#pesquisa">Pesquisa</a>
+
+        <a href="#eventos">Eventos</a>
+
+    </nav>
+
+
+    <!--
+        main representa o conteúdo principal da página.
+    -->
+
     <main>
 
-        <!-- Seção dos destaques -->
-        <section class="destaques">
 
-            <!-- Primeiro cartão -->
-            <div class="card">
+        <!-- ================================================= -->
+        <!-- APRESENTAÇÃO -->
+        <!-- ================================================= -->
 
-                <h2>Mito ou Verdade?</h2>
+        <section class="introducao">
 
-                <p>
-                    A música não possui nenhuma relação com a Matemática.
-                </p>
+            <h2>Música é apenas arte?</h2>
 
-                <!-- Botão que executa uma função JavaScript -->
-                <button onclick="mostrarResposta('resposta1')">
-                    Ver resposta
-                </button>
+            <p>
+                Não. A música envolve arte, cultura, história, física,
+                matemática, tecnologia e percepção humana.
+            </p>
 
-                <!-- A resposta começa escondida -->
-                <p id="resposta1" class="resposta">
-                    <strong>MITO!</strong><br>
-                    A música possui muita Matemática.
-                    Ritmo, tempo, divisão de compassos e duração das notas
-                    podem ser relacionados com números e frações.
-                </p>
+            <p>
+                Quando um músico toca uma nota, existem frequências,
+                vibrações e ondas acontecendo.
+            </p>
 
-            </div>
+            <p>
+                Quando organiza um ritmo, aparecem divisões,
+                frações e padrões.
+            </p>
 
+            <p>
+                Quando cria uma escala ou um acorde, aparecem relações
+                entre frequências e intervalos.
+            </p>
 
-            <!-- Segundo cartão -->
-            <div class="card">
-
-                <h2>Mito ou Verdade?</h2>
-
-                <p>
-                    Podemos utilizar frações para compreender
-                    alguns elementos musicais.
-                </p>
-
-                <button onclick="mostrarResposta('resposta2')">
-                    Ver resposta
-                </button>
-
-                <p id="resposta2" class="resposta">
-                    <strong>VERDADE!</strong><br>
-                    Uma nota pode representar diferentes partes de um tempo.
-                    Podemos relacionar essas divisões com
-                    1/2, 1/4, 1/8, entre outras frações.
-                </p>
-
-            </div>
+        </section>
 
 
-            <!-- Terceiro cartão -->
-            <div class="card">
 
-                <h2>Mito ou Verdade?</h2>
+        <!-- ================================================= -->
+        <!-- DESTAQUES: MITOS E VERDADES -->
+        <!-- ================================================= -->
 
-                <p>
-                    Utilizar música nas aulas pode ajudar
-                    na aprendizagem de Matemática.
-                </p>
+        <section id="destaques">
 
-                <button onclick="mostrarResposta('resposta3')">
-                    Ver resposta
-                </button>
+            <h2>🔎 Destaques — Verificação de fatos</h2>
 
-                <p id="resposta3" class="resposta">
-                    <strong>VERDADE!</strong><br>
-                    Ritmos, sequências e padrões musicais podem ajudar
-                    os estudantes a perceber regularidades,
-                    contagens e relações matemáticas.
-                </p>
+            <p class="descricao">
+                Nem tudo o que ouvimos sobre música é verdadeiro.
+                Veja três exemplos.
+            </p>
+
+
+            <!--
+                div é usada para agrupar elementos.
+                Aqui criamos um grupo de cartões usando Flexbox.
+            -->
+
+            <div class="cards">
+
+
+                <!-- CARTÃO 1 -->
+
+                <article class="card">
+
+                    <h3>MITO ❌</h3>
+
+                    <h4>
+                        “Para aprender música é preciso nascer com talento.”
+                    </h4>
+
+                    <p>
+                        Talento pode ajudar, mas habilidades musicais podem
+                        ser desenvolvidas com estudo, prática,
+                        escuta e orientação.
+                    </p>
+
+                    <p class="veredito">
+                        VEREDITO: MITO
+                    </p>
+
+                </article>
+
+
+
+                <!-- CARTÃO 2 -->
+
+                <article class="card">
+
+                    <h3>VERDADE ✅</h3>
+
+                    <h4>
+                        “Existe matemática dentro da música.”
+                    </h4>
+
+                    <p>
+                        Ritmo, frequência, compasso, escalas,
+                        intervalos e afinação possuem relações
+                        matemáticas.
+                    </p>
+
+                    <p>
+                        Uma oitava, por exemplo, representa uma
+                        relação de frequência de 2 para 1.
+                    </p>
+
+                    <p class="veredito">
+                        VEREDITO: VERDADE
+                    </p>
+
+                </article>
+
+
+
+                <!-- CARTÃO 3 -->
+
+                <article class="card">
+
+                    <h3>MITO ❌</h3>
+
+                    <h4>
+                        “O contrabaixo apenas acompanha os outros instrumentos.”
+                    </h4>
+
+                    <p>
+                        O baixo pode sustentar a harmonia e o ritmo,
+                        mas também pode executar melodias,
+                        acordes, improvisações e solos.
+                    </p>
+
+                    <p class="veredito">
+                        VEREDITO: MITO
+                    </p>
+
+                </article>
 
             </div>
 
         </section>
 
+
+
+        <!-- ================================================= -->
+        <!-- FUNDAMENTOS DA MÚSICA -->
+        <!-- ================================================= -->
+
+        <section id="fundamentos">
+
+            <h2>🎼 Fundamentos da Música</h2>
+
+            <div class="conteudo-flex">
+
+
+                <article class="bloco">
+
+                    <h3>1. Notas musicais</h3>
+
+                    <p>
+                        Na música ocidental usamos principalmente:
+                    </p>
+
+                    <p class="notas">
+                        DÓ – RÉ – MI – FÁ – SOL – LÁ – SI
+                    </p>
+
+                    <p>
+                        Depois do SI, a sequência recomeça em outro DÓ,
+                        uma oitava acima.
+                    </p>
+
+                </article>
+
+
+                <article class="bloco">
+
+                    <h3>2. Ritmo</h3>
+
+                    <p>
+                        Ritmo é a organização dos sons e silêncios
+                        ao longo do tempo.
+                    </p>
+
+                    <p>
+                        Podemos encontrar:
+                    </p>
+
+                    <ul>
+                        <li>Pulsação</li>
+                        <li>Tempo</li>
+                        <li>Compasso</li>
+                        <li>Figuras musicais</li>
+                        <li>Pausas</li>
+                    </ul>
+
+                </article>
+
+
+                <article class="bloco">
+
+                    <h3>3. Melodia</h3>
+
+                    <p>
+                        É uma sequência organizada de notas que
+                        normalmente conseguimos cantar ou reconhecer.
+                    </p>
+
+                </article>
+
+
+                <article class="bloco">
+
+                    <h3>4. Harmonia</h3>
+
+                    <p>
+                        Harmonia estuda a combinação de notas
+                        tocadas simultaneamente.
+                    </p>
+
+                    <p>
+                        É nela que estudamos acordes,
+                        progressões harmônicas e tonalidades.
+                    </p>
+
+                </article>
+
+
+                <article class="bloco">
+
+                    <h3>5. Timbre</h3>
+
+                    <p>
+                        Timbre é uma das características que permitem
+                        diferenciar os sons.
+                    </p>
+
+                    <p>
+                        Por isso conseguimos perceber a diferença entre
+                        um piano, uma guitarra e um contrabaixo
+                        tocando uma nota semelhante.
+                    </p>
+
+                </article>
+
+
+                <article class="bloco">
+
+                    <h3>6. Dinâmica</h3>
+
+                    <p>
+                        Indica variações de intensidade durante
+                        uma música.
+                    </p>
+
+                    <ul>
+                        <li>Piano — tocar suavemente.</li>
+                        <li>Forte — tocar com intensidade.</li>
+                        <li>Crescendo — aumentar gradualmente.</li>
+                        <li>Diminuendo — diminuir gradualmente.</li>
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- MATEMÁTICA E MÚSICA -->
+        <!-- ================================================= -->
+
+        <section id="matematica">
+
+            <h2>🧮 Onde está a Matemática na Música?</h2>
+
+
+            <div class="conteudo-flex">
+
+
+                <article class="bloco">
+
+                    <h3>1. Frações no ritmo</h3>
+
+                    <p>
+                        As figuras musicais podem ser relacionadas
+                        às divisões do tempo.
+                    </p>
+
+                    <ul>
+                        <li>1 inteiro</li>
+                        <li>1/2</li>
+                        <li>1/4</li>
+                        <li>1/8</li>
+                        <li>1/16</li>
+                    </ul>
+
+                    <p>
+                        Portanto, estudar ritmo também pode ajudar
+                        a compreender frações.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>2. Razão e proporção</h3>
+
+                    <p>
+                        Frequências musicais podem ser comparadas
+                        usando razões.
+                    </p>
+
+                    <p>
+                        Exemplo:
+                    </p>
+
+                    <p class="formula">
+                        oitava → 2 : 1
+                    </p>
+
+                    <p>
+                        Se uma nota possui frequência de 220 Hz,
+                        sua oitava acima terá aproximadamente 440 Hz.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>3. Frequência</h3>
+
+                    <p>
+                        Frequência indica quantas oscilações acontecem
+                        em determinado intervalo de tempo.
+                    </p>
+
+                    <p>
+                        Sua unidade é o Hertz:
+                    </p>
+
+                    <p class="formula">
+                        Hz
+                    </p>
+
+                    <p>
+                        Quanto maior a frequência, geralmente
+                        mais agudo percebemos o som.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>4. Potenciação</h3>
+
+                    <p>
+                        A afinação do sistema de 12 semitons
+                        do temperamento igual pode ser estudada
+                        usando potências.
+                    </p>
+
+                    <p class="formula">
+                        frequência nova =
+                        frequência inicial × 2<sup>n/12</sup>
+                    </p>
+
+                    <p>
+                        n representa a quantidade de semitons.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>5. Progressões</h3>
+
+                    <p>
+                        As frequências musicais também permitem
+                        estudar crescimento multiplicativo.
+                    </p>
+
+                    <p>
+                        Por exemplo:
+                    </p>
+
+                    <p class="formula">
+                        110 → 220 → 440 → 880
+                    </p>
+
+                    <p>
+                        A cada oitava a frequência é multiplicada por 2.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>6. Ondas</h3>
+
+                    <p>
+                        O som é uma onda mecânica.
+                    </p>
+
+                    <p>
+                        Podemos estudar:
+                    </p>
+
+                    <ul>
+                        <li>frequência;</li>
+                        <li>amplitude;</li>
+                        <li>período;</li>
+                        <li>comprimento de onda;</li>
+                        <li>harmônicos.</li>
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- EXPERIÊNCIA MATEMÁTICA -->
+        <!-- ================================================= -->
+
+        <section>
+
+            <h2>🧪 Experimento: construindo oitavas</h2>
+
+            <p>
+                Comece com uma frequência de 110 Hz.
+            </p>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <tr>
+                        <th>Nota</th>
+                        <th>Frequência</th>
+                        <th>Operação</th>
+                    </tr>
+
+                    <tr>
+                        <td>Lá</td>
+                        <td>110 Hz</td>
+                        <td>Inicial</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lá</td>
+                        <td>220 Hz</td>
+                        <td>110 × 2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lá</td>
+                        <td>440 Hz</td>
+                        <td>220 × 2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lá</td>
+                        <td>880 Hz</td>
+                        <td>440 × 2</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <p>
+                Pergunta:
+                qual seria a próxima frequência?
+            </p>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- CONTRABAIXO -->
+        <!-- ================================================= -->
+
+        <section id="baixo">
+
+            <h2>🎸 Contrabaixo Elétrico</h2>
+
+            <p>
+                O contrabaixo é excelente para estudar simultaneamente
+                ritmo, harmonia, matemática e percepção musical.
+            </p>
+
+
+            <div class="conteudo-flex">
+
+
+                <article class="bloco">
+
+                    <h3>Partes importantes</h3>
+
+                    <ul>
+                        <li>Corpo</li>
+                        <li>Braço</li>
+                        <li>Escala</li>
+                        <li>Trastes</li>
+                        <li>Captadores</li>
+                        <li>Ponte</li>
+                        <li>Tarraxas</li>
+                        <li>Cordas</li>
+                    </ul>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Afinação tradicional</h3>
+
+                    <p>
+                        No baixo de quatro cordas:
+                    </p>
+
+                    <p class="notas">
+                        MI – LÁ – RÉ – SOL
+                    </p>
+
+                    <p>
+                        Da corda mais grave para a mais aguda.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Técnica da mão direita</h3>
+
+                    <ul>
+                        <li>Alternância dos dedos indicador e médio.</li>
+                        <li>Controle da intensidade.</li>
+                        <li>Abafamento das cordas.</li>
+                        <li>Regularidade rítmica.</li>
+                    </ul>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Técnica da mão esquerda</h3>
+
+                    <ul>
+                        <li>Posicionamento correto dos dedos.</li>
+                        <li>Pressão adequada.</li>
+                        <li>Economia de movimento.</li>
+                        <li>Conhecimento das notas no braço.</li>
+                    </ul>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Escalas para estudar</h3>
+
+                    <ul>
+                        <li>Escala maior</li>
+                        <li>Escala menor natural</li>
+                        <li>Pentatônica maior</li>
+                        <li>Pentatônica menor</li>
+                        <li>Escala blues</li>
+                        <li>Modos gregos</li>
+                    </ul>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Técnicas avançadas</h3>
+
+                    <ul>
+                        <li>Slap</li>
+                        <li>Pop</li>
+                        <li>Hammer-on</li>
+                        <li>Pull-off</li>
+                        <li>Slide</li>
+                        <li>Ghost notes</li>
+                        <li>Tapping</li>
+                        <li>Harmônicos</li>
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- PLANO DE ESTUDO -->
+        <!-- ================================================= -->
+
+        <section>
+
+            <h2>📚 Caminho para estudar contrabaixo</h2>
+
+            <div class="etapas">
+
+                <div class="etapa">
+                    <strong>1</strong>
+                    <p>Conhecer as partes do instrumento.</p>
+                </div>
+
+                <div class="etapa">
+                    <strong>2</strong>
+                    <p>Aprender as notas das cordas.</p>
+                </div>
+
+                <div class="etapa">
+                    <strong>3</strong>
+                    <p>Aprender as notas no braço.</p>
+                </div>
+
+                <div class="etapa">
+                    <strong>4</strong>
+                    <p>Estudar ritmo com metrônomo.</p>
+                </div>
+
+                <div class="etapa">
+                    <strong>5</strong>
+                    <p>Praticar escalas.</p>
+                </div>
+
+                <div class="etapa">
+                    <strong>6</strong>
+                    <p>Estudar intervalos.</p>
+                </div>
+
+                <div class="etapa">
+                    <strong>7</strong>
+                    <p>Estudar tríades e acordes.</p>
+                </div>
+
+                <div class="etapa">
+                    <strong>8</strong>
+                    <p>Criar linhas de baixo.</p>
+                </div>
+
+                <div class="etapa">
+                    <strong>9</strong>
+                    <p>Estudar repertório.</p>
+                </div>
+
+                <div class="etapa">
+                    <strong>10</strong>
+                    <p>Improvisar e criar músicas.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- EXERCÍCIOS -->
+        <!-- ================================================= -->
+
+        <section id="exercicios">
+
+            <h2>✏️ Exercícios de Matemática e Música</h2>
+
+
+            <article class="atividade">
+
+                <h3>Atividade 1 — Frequências</h3>
+
+                <p>
+                    Uma nota possui frequência de 220 Hz.
+                    Uma oitava acima possui o dobro da frequência.
+                </p>
+
+                <p>
+                    Qual será a frequência?
+                </p>
+
+            </article>
+
+
+            <article class="atividade">
+
+                <h3>Atividade 2 — Progressão</h3>
+
+                <p>
+                    Observe:
+                </p>
+
+                <p class="formula">
+                    55 → 110 → 220 → 440 → ?
+                </p>
+
+                <p>
+                    Determine o próximo valor.
+                </p>
+
+            </article>
+
+
+            <article class="atividade">
+
+                <h3>Atividade 3 — Ritmo e frações</h3>
+
+                <p>
+                    Um compasso possui quatro tempos.
+                </p>
+
+                <p>
+                    Se cada tempo for dividido em duas partes iguais,
+                    quantas partes teremos?
+                </p>
+
+            </article>
+
+
+            <article class="atividade">
+
+                <h3>Atividade 4 — Investigação</h3>
+
+                <p>
+                    Pesquise a frequência aproximada das notas
+                    Dó, Ré, Mi, Fá, Sol, Lá e Si.
+                </p>
+
+                <p>
+                    Depois construa uma tabela usando uma planilha.
+                </p>
+
+            </article>
+
+
+            <article class="atividade">
+
+                <h3>Atividade 5 — Contrabaixo</h3>
+
+                <p>
+                    Localize no braço do contrabaixo três formas
+                    diferentes de tocar a nota Lá.
+                </p>
+
+            </article>
+
+
+            <article class="atividade">
+
+                <h3>Atividade 6 — Criação</h3>
+
+                <p>
+                    Crie um ritmo de quatro tempos utilizando
+                    diferentes divisões.
+                </p>
+
+                <p>
+                    Depois represente matematicamente as divisões
+                    utilizando frações.
+                </p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- GRANDES CONTRABAIXISTAS -->
+        <!-- ================================================= -->
+
+        <section id="artistas">
+
+            <h2>🌎 Grandes nomes do contrabaixo</h2>
+
+
+            <div class="conteudo-flex">
+
+
+                <article class="musico">
+
+                    <h3>Jaco Pastorius</h3>
+
+                    <p>
+                        Um dos músicos mais importantes na transformação
+                        do contrabaixo elétrico em instrumento solista.
+                    </p>
+
+                    <p>
+                        Destaques:
+                        fretless, harmônicos, jazz fusion e improvisação.
+                    </p>
+
+                </article>
+
+
+
+                <article class="musico">
+
+                    <h3>Victor Wooten</h3>
+
+                    <p>
+                        Conhecido pela técnica, criatividade,
+                        educação musical e exploração rítmica.
+                    </p>
+
+                </article>
+
+
+
+                <article class="musico">
+
+                    <h3>Marcus Miller</h3>
+
+                    <p>
+                        Referência mundial em slap,
+                        composição, produção e jazz.
+                    </p>
+
+                </article>
+
+
+
+                <article class="musico">
+
+                    <h3>James Jamerson</h3>
+
+                    <p>
+                        Um dos grandes responsáveis pela linguagem
+                        do baixo na música popular da Motown.
+                    </p>
+
+                </article>
+
+
+
+                <article class="musico">
+
+                    <h3>Carol Kaye</h3>
+
+                    <p>
+                        Importante baixista de estúdio,
+                        professora e participante de inúmeras gravações.
+                    </p>
+
+                </article>
+
+
+
+                <article class="musico">
+
+                    <h3>Paul McCartney</h3>
+
+                    <p>
+                        Além de compositor, desenvolveu linhas de baixo
+                        melódicas que se tornaram referência
+                        na música popular.
+                    </p>
+
+                </article>
+
+
+                <article class="musico">
+
+                    <h3>Luizão Maia</h3>
+
+                    <p>
+                        Referência brasileira no contrabaixo,
+                        com importante participação na música popular brasileira.
+                    </p>
+
+                </article>
+
+
+                <article class="musico">
+
+                    <h3>Nico Assumpção</h3>
+
+                    <p>
+                        Um dos nomes fundamentais do contrabaixo
+                        elétrico brasileiro.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- O QUE O ALUNO DEVE OUVIR -->
+        <!-- ================================================= -->
+
+        <section>
+
+            <h2>🎧 Laboratório de Escuta</h2>
+
+            <p>
+                Não basta estudar teoria. Música também deve ser ouvida
+                de maneira consciente.
+            </p>
+
+            <p>
+                Escolha uma música e tente identificar:
+            </p>
+
+            <ol>
+                <li>Qual instrumento está marcando o ritmo?</li>
+                <li>Onde aparece o contrabaixo?</li>
+                <li>Existe repetição?</li>
+                <li>Existe um padrão?</li>
+                <li>O andamento é rápido ou lento?</li>
+                <li>Qual é o instrumento mais grave?</li>
+                <li>A música muda de intensidade?</li>
+                <li>Existe solo?</li>
+                <li>Você consegue perceber o refrão?</li>
+                <li>Existe alguma sequência que se repete?</li>
+            </ol>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- TECNOLOGIA -->
+        <!-- ================================================= -->
+
+        <section>
+
+            <h2>💻 Música e Tecnologia</h2>
+
+
+            <div class="conteudo-flex">
+
+
+                <article class="bloco">
+
+                    <h3>Produção musical</h3>
+
+                    <p>
+                        Hoje grande parte da música é gravada,
+                        editada e produzida utilizando computadores.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Áudio digital</h3>
+
+                    <p>
+                        Permite relacionar música com temas como:
+                    </p>
+
+                    <ul>
+                        <li>frequência;</li>
+                        <li>amostragem;</li>
+                        <li>ondas;</li>
+                        <li>bits;</li>
+                        <li>compressão;</li>
+                        <li>processamento de sinais.</li>
+                    </ul>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Programação</h3>
+
+                    <p>
+                        Também é possível utilizar programação
+                        para gerar notas, ritmos, sintetizadores
+                        e visualizações de ondas.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Inteligência Artificial</h3>
+
+                    <p>
+                        Pesquisadores utilizam algoritmos para
+                        analisar músicas, identificar padrões,
+                        classificar estilos e estudar grandes
+                        bancos de dados musicais.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- PESQUISA CIENTÍFICA -->
+        <!-- ================================================= -->
+
+        <section id="pesquisa">
+
+            <h2>🔬 Para quem quer ir além</h2>
+
+            <p>
+                Música também é uma área de pesquisa científica.
+            </p>
+
+
+            <div class="conteudo-flex">
+
+
+                <article class="bloco">
+
+                    <h3>Matemática da Música</h3>
+
+                    <p>
+                        Estuda afinação, escalas, simetria,
+                        proporções, estruturas musicais
+                        e modelos matemáticos.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Acústica</h3>
+
+                    <p>
+                        Estuda cientificamente o som,
+                        ondas, ressonância, frequências
+                        e propagação sonora.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Music Information Retrieval</h3>
+
+                    <p>
+                        Área que reúne música e computação para
+                        desenvolver ferramentas capazes de pesquisar,
+                        organizar e analisar dados musicais.
+                    </p>
+
+                </article>
+
+
+
+                <article class="bloco">
+
+                    <h3>Psicoacústica</h3>
+
+                    <p>
+                        Investiga como o ser humano percebe
+                        altura, intensidade, timbre e outros
+                        elementos sonoros.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- LIVROS -->
+        <!-- ================================================= -->
+
+        <section>
+
+            <h2>📖 Biblioteca Musical</h2>
+
+            <div class="biblioteca">
+
+
+                <article class="livro">
+
+                    <h3>Fundamentals of Music Theory</h3>
+
+                    <p>
+                        Universidade de Edimburgo.
+                    </p>
+
+                    <p>
+                        Material aberto sobre notas, escalas,
+                        intervalos, ritmo, harmonia e notação musical.
+                    </p>
+
+                </article>
+
+
+
+                <article class="livro">
+
+                    <h3>Open Music Theory</h3>
+
+                    <p>
+                        Livro digital aberto e bastante completo.
+                    </p>
+
+                    <p>
+                        Vai de fundamentos até jazz,
+                        música popular, harmonia,
+                        contraponto e técnicas modernas.
+                    </p>
+
+                </article>
+
+
+
+                <article class="livro">
+
+                    <h3>Music Theory for the 21st-Century Classroom</h3>
+
+                    <p>
+                        Material de nível universitário
+                        que relaciona teoria,
+                        melodia e análise musical.
+                    </p>
+
+                </article>
+
+
+
+                <article class="livro">
+
+                    <h3>The Music Lesson</h3>
+
+                    <p>
+                        Autor: Victor Wooten.
+                    </p>
+
+                    <p>
+                        Um livro interessante sobre aprendizagem,
+                        escuta, musicalidade e desenvolvimento
+                        do músico.
+                    </p>
+
+                </article>
+
+
+                <article class="livro">
+
+                    <h3>The Advancing Guitarist</h3>
+
+                    <p>
+                        Autor: Mick Goodrick.
+                    </p>
+
+                    <p>
+                        Apesar do foco em guitarra, possui ideias
+                        relevantes sobre braço do instrumento,
+                        escalas, intervalos e improvisação.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- EVENTOS -->
+        <!-- ================================================= -->
+
+        <section id="eventos">
+
+            <h2>🎤 Feiras, congressos e eventos</h2>
+
+
+            <div class="conteudo-flex">
+
+
+                <article class="evento">
+
+                    <h3>NAMM Show</h3>
+
+                    <p>
+                        Um dos maiores eventos internacionais
+                        ligados a instrumentos musicais,
+                        tecnologia, educação e indústria da música.
+                    </p>
+
+                </article>
+
+
+
+                <article class="evento">
+
+                    <h3>MCM</h3>
+
+                    <p>
+                        International Conference on
+                        Mathematics and Computation in Music.
+                    </p>
+
+                    <p>
+                        Reúne pesquisadores de matemática,
+                        computação e música.
+                    </p>
+
+                </article>
+
+
+
+                <article class="evento">
+
+                    <h3>ISMIR</h3>
+
+                    <p>
+                        Congresso internacional dedicado
+                        à pesquisa computacional relacionada
+                        à música.
+                    </p>
+
+                </article>
+
+
+
+                <article class="evento">
+
+                    <h3>AES</h3>
+
+                    <p>
+                        Eventos ligados à engenharia de áudio,
+                        gravação, acústica e tecnologia sonora.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- PROJETO FINAL -->
+        <!-- ================================================= -->
+
+        <section class="projeto">
+
+            <h2>🚀 Projeto para os estudantes</h2>
+
+            <h3>Desafio: Música, Matemática e Web</h3>
+
+            <p>
+                Em grupos, os estudantes deverão escolher
+                um tema musical e criar uma página web.
+            </p>
+
+            <p>
+                Algumas possibilidades:
+            </p>
+
+            <ul>
+                <li>Matemática e frequência.</li>
+                <li>Frações e ritmo.</li>
+                <li>História do contrabaixo.</li>
+                <li>Grandes baixistas.</li>
+                <li>Matemática das escalas.</li>
+                <li>Ondas sonoras.</li>
+                <li>Música eletrônica.</li>
+                <li>Produção musical.</li>
+                <li>Música e programação.</li>
+                <li>Música brasileira.</li>
+                <li>Instrumentos musicais.</li>
+            </ul>
+
+            <p>
+                A página deverá utilizar:
+            </p>
+
+            <ul>
+                <li>HTML;</li>
+                <li>CSS;</li>
+                <li>Flexbox;</li>
+                <li>imagens;</li>
+                <li>textos;</li>
+                <li>links;</li>
+                <li>fontes confiáveis.</li>
+            </ul>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- VERIFICAÇÃO DAS FONTES -->
+        <!-- ================================================= -->
+
+        <section>
+
+            <h2>✅ Antes de acreditar, verifique</h2>
+
+            <p>
+                Para trabalhar inclusão e letramento digital,
+                ensine os estudantes a fazer estas perguntas:
+            </p>
+
+            <ol>
+                <li>Quem publicou esta informação?</li>
+
+                <li>Existe autor identificado?</li>
+
+                <li>É uma universidade ou instituição reconhecida?</li>
+
+                <li>Existe referência científica?</li>
+
+                <li>Quando o material foi publicado?</li>
+
+                <li>Outras fontes dizem a mesma coisa?</li>
+
+                <li>É informação, publicidade ou opinião?</li>
+
+                <li>Consigo localizar a fonte original?</li>
+            </ol>
+
+        </section>
+
+
     </main>
 
 
-    <!-- Rodapé da página -->
+
+    <!-- ===================================================== -->
+    <!-- RODAPÉ -->
+    <!-- ===================================================== -->
+
     <footer>
 
         <p>
-            Projeto de Matemática, Música e Desenvolvimento Web
+            Projeto: Matemática, Música e Inclusão Digital
+        </p>
+
+        <p>
+            Desenvolvido para atividades educacionais.
         </p>
 
     </footer>
 
-
-    <!-- JavaScript responsável pela interação -->
-    <script>
-
-        // Criamos uma função chamada mostrarResposta
-        function mostrarResposta(id) {
-
-            // Procura no HTML o elemento que possui o ID recebido
-            let resposta = document.getElementById(id);
-
-            // Verifica se a resposta está aparecendo
-            if (resposta.style.display === "block") {
-
-                // Se estiver aparecendo, esconde
-                resposta.style.display = "none";
-
-            } else {
-
-                // Se estiver escondida, mostra
-                resposta.style.display = "block";
-
-            }
-
-        }
-
-    </script>
 
 </body>
 

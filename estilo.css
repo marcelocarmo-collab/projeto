@@ -1,128 +1,537 @@
-/* Retira algumas margens automáticas do navegador */
+/* ========================================================= */
+/* CONFIGURAÇÃO GERAL */
+/* ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*
+    body representa toda a página.
+*/
+
 body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
     margin: 0;
 
-    /* Define a fonte utilizada na página */
-    font-family: Arial, sans-serif;
-
-    /* Cor de fundo */
     background-color: #f4f4f4;
 
-    /* Cor padrão das letras */
     color: #222;
+
+    line-height: 1.6;
 }
 
 
-/* Estilização do cabeçalho */
+
+/* ========================================================= */
+/* CABEÇALHO */
+/* ========================================================= */
+
 header {
-    background-color: #1d4ed8;
+
+    background-color: #102a43;
+
     color: white;
 
-    /* Espaçamento interno */
-    padding: 30px;
-
-    /* Centraliza os textos */
     text-align: center;
+
+    padding: 50px 20px;
 }
 
 
-/* Área principal da página */
-main {
-    padding: 30px;
+header h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
 }
 
 
-/* Container que guarda os três cartões */
-.destaques {
+header p {
 
-    /* Ativa o Flexbox */
+    font-size: 20px;
+}
+
+
+
+/* ========================================================= */
+/* MENU */
+/* ========================================================= */
+
+nav {
+
+    background-color: #1f4e79;
+
+    /*
+        display: flex ativa o Flexbox.
+    */
+
     display: flex;
 
-    /* Cria espaço entre os cartões */
-    gap: 20px;
+    /*
+        Permite que os itens passem para outra linha
+        quando não houver espaço.
+    */
 
-    /* Permite que os cartões quebrem para outra linha */
     flex-wrap: wrap;
 
-    /* Centraliza os cartões */
+    /*
+        Centraliza os itens horizontalmente.
+    */
+
+    justify-content: center;
+
+    padding: 15px;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 5px 15px;
+
+    padding: 8px 12px;
+}
+
+
+nav a:hover {
+
+    background-color: white;
+
+    color: #1f4e79;
+
+    border-radius: 5px;
+}
+
+
+
+/* ========================================================= */
+/* CONTEÚDO PRINCIPAL */
+/* ========================================================= */
+
+main {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px;
+}
+
+
+section {
+
+    background-color: white;
+
+    margin: 30px 0;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+
+section h2 {
+
+    color: #102a43;
+
+    font-size: 30px;
+}
+
+
+
+/* ========================================================= */
+/* INTRODUÇÃO */
+/* ========================================================= */
+
+.introducao {
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+
+/* ========================================================= */
+/* CARDS DOS DESTAQUES */
+/* ========================================================= */
+
+.cards {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
     justify-content: center;
 }
 
 
-/* Cada cartão */
 .card {
-    background-color: white;
 
-    /* Define a largura */
-    width: 280px;
+    /*
+        flex: 1 permite que os cartões
+        dividam o espaço disponível.
+    */
 
-    /* Espaçamento interno */
-    padding: 20px;
+    flex: 1;
 
-    /* Arredonda as bordas */
+    /*
+        Define tamanho mínimo.
+    */
+
+    min-width: 250px;
+
+    background-color: #eef5fb;
+
+    padding: 25px;
+
     border-radius: 10px;
 
-    /* Coloca uma pequena sombra */
-    box-shadow: 0 2px 8px #999;
-
-    /* Centraliza o conteúdo */
-    text-align: center;
+    border: 1px solid #ccc;
 }
 
 
-/* Título de cada cartão */
-.card h2 {
-    color: #1d4ed8;
+.card h3 {
+
+    font-size: 24px;
 }
 
 
-/* Botões */
-button {
-    background-color: #1d4ed8;
-    color: white;
+.veredito {
 
-    /* Retira a borda padrão */
-    border: none;
+    font-weight: bold;
 
-    /* Espaçamento interno */
-    padding: 10px 20px;
-
-    /* Arredonda o botão */
-    border-radius: 5px;
-
-    /* Muda o cursor do mouse */
-    cursor: pointer;
+    margin-top: 20px;
 }
 
 
-/* Quando o mouse passa sobre o botão */
-button:hover {
-    background-color: #163ea7;
+
+/* ========================================================= */
+/* BLOCOS DE CONTEÚDO */
+/* ========================================================= */
+
+.conteudo-flex {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
 }
 
 
-/* As respostas começam escondidas */
-.resposta {
-    display: none;
+.bloco {
 
-    /* Espaço acima da resposta */
-    margin-top: 15px;
+    flex: 1;
 
-    /* Fundo levemente diferente */
-    background-color: #e8f0ff;
+    min-width: 280px;
 
-    padding: 10px;
+    padding: 20px;
+
+    background-color: #f8f9fa;
+
+    border-left: 5px solid #1f4e79;
 
     border-radius: 5px;
 }
 
 
-/* Rodapé */
-footer {
-    background-color: #222;
-    color: white;
+.bloco h3 {
+
+    color: #1f4e79;
+}
+
+
+
+/* ========================================================= */
+/* NOTAS MUSICAIS */
+/* ========================================================= */
+
+.notas {
+
+    font-size: 24px;
+
+    font-weight: bold;
 
     text-align: center;
+
+    letter-spacing: 4px;
+
+    color: #1f4e79;
+}
+
+
+
+/* ========================================================= */
+/* FÓRMULAS */
+/* ========================================================= */
+
+.formula {
+
+    background-color: #eeeeee;
 
     padding: 15px;
+
+    text-align: center;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+
+
+/* ========================================================= */
+/* TABELA */
+/* ========================================================= */
+
+.tabela-container {
+
+    overflow-x: auto;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+
+th,
+td {
+
+    border: 1px solid #aaa;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+
+th {
+
+    background-color: #1f4e79;
+
+    color: white;
+}
+
+
+
+/* ========================================================= */
+/* ETAPAS DE ESTUDO */
+/* ========================================================= */
+
+.etapas {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+
+.etapa {
+
+    flex: 1;
+
+    min-width: 180px;
+
+    background-color: #eef5fb;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 8px;
+}
+
+
+.etapa strong {
+
+    display: block;
+
+    font-size: 30px;
+
+    color: #1f4e79;
+}
+
+
+
+/* ========================================================= */
+/* EXERCÍCIOS */
+/* ========================================================= */
+
+.atividade {
+
+    background-color: #f8f9fa;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    border-left: 5px solid #102a43;
+
+    border-radius: 5px;
+}
+
+
+
+/* ========================================================= */
+/* MÚSICOS */
+/* ========================================================= */
+
+.musico {
+
+    flex: 1;
+
+    min-width: 250px;
+
+    background-color: #eef5fb;
+
+    padding: 20px;
+
+    border-radius: 8px;
+}
+
+
+.musico h3 {
+
+    color: #102a43;
+}
+
+
+
+/* ========================================================= */
+/* LIVROS */
+/* ========================================================= */
+
+.biblioteca {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+.livro {
+
+    flex: 1;
+
+    min-width: 250px;
+
+    background-color: #f8f9fa;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ddd;
+}
+
+
+
+/* ========================================================= */
+/* EVENTOS */
+/* ========================================================= */
+
+.evento {
+
+    flex: 1;
+
+    min-width: 250px;
+
+    padding: 20px;
+
+    background-color: #eef5fb;
+
+    border-radius: 8px;
+}
+
+
+
+/* ========================================================= */
+/* PROJETO FINAL */
+/* ========================================================= */
+
+.projeto {
+
+    background-color: #eaf4ea;
+}
+
+
+
+/* ========================================================= */
+/* RODAPÉ */
+/* ========================================================= */
+
+footer {
+
+    background-color: #102a43;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+
+/* ========================================================= */
+/* RESPONSIVIDADE */
+/* ========================================================= */
+
+/*
+    Essa regra é aplicada quando a tela
+    tiver até 700px de largura.
+*/
+
+@media (max-width: 700px) {
+
+    header h1 {
+
+        font-size: 32px;
+    }
+
+
+    nav {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .cards,
+    .conteudo-flex,
+    .biblioteca,
+    .etapas {
+
+        flex-direction: column;
+    }
+
+
+    section {
+
+        padding: 20px;
+    }
+
 }
